@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #0f0f1e;
+  background: #5a5a6e;
   position: relative;
   overflow: hidden;
 }
@@ -78,3 +78,119 @@ canvas {
   transform: translateY(1px);
 }
 
+.permission-banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  padding: 32px;
+  border-radius: 12px;
+  text-align: center;
+  z-index: 100;
+  max-width: 300px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.permission-banner p {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.permission-button {
+  appearance: none;
+  border: 1px solid rgba(100, 150, 255, 0.4);
+  background: rgba(100, 150, 255, 0.15);
+  color: #f6f6f8;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  transition: transform 0.12s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.permission-button:hover {
+  background: rgba(100, 150, 255, 0.25);
+  border-color: rgba(100, 150, 255, 0.6);
+}
+
+.permission-button:active {
+  transform: translateY(1px);
+}
+
+.shake-status {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #8fdb8f;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(143, 219, 143, 0.3);
+  z-index: 10;
+}
+
+.debug-panel {
+  position: absolute;
+  bottom: 120px;
+  left: 24px;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  font-family: monospace;
+  font-size: 12px;
+  line-height: 1.6;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 15;
+  max-width: 250px;
+}
+
+.debug-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #6fa3ff;
+}
+
+.debug-info {
+  margin-bottom: 12px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 12px;
+  border-radius: 6px;
+  border-left: 3px solid #6fa3ff;
+}
+
+.debug-info strong {
+  color: #8fdb8f;
+}
+
+.debug-copy-button {
+  appearance: none;
+  border: 1px solid rgba(111, 163, 255, 0.4);
+  background: rgba(111, 163, 255, 0.15);
+  color: #6fa3ff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.debug-copy-button:hover {
+  background: rgba(111, 163, 255, 0.25);
+  border-color: rgba(111, 163, 255, 0.6);
+}
