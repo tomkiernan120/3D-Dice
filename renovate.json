@@ -41,5 +41,7 @@
     "before 3am on Monday"
   ],
   "timezone": "UTC",
-  "dependencyDashboard": true
+  "dependencyDashboard": {
+    "enabled": true
+  }
 }
